@@ -1,0 +1,1 @@
+/\bhello\sworld\b/g

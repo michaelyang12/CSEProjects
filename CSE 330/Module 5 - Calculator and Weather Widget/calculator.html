@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang = "en">
+<h1>
+    <title>JavaScript Calculator</title>
+</h1>
+<body>
+    <div>
+        <input type="text" name="value1" id="value1"/>
+        <input type="radio" name="op" id="add">+
+        <input type="radio" name="op" id="subtract">-
+        <input type="radio" name="op" id="multiply">x
+        <input type="radio" name="op" id="divide">/
+        <input type="text" name="value2" id="value2"/>
+    </div>
+    <script type ="text/JavaScript">
+        document.getElementById("value1").addEventListener("input", calculate);
+        document.getElementById("value2").addEventListener("input", calculate);
+        document.getElementById("add").addEventListener("click", calculate);
+        document.getElementById("subtract").addEventListener("click", calculate);
+        document.getElementById("multiply").addEventListener("click", calculate);
+        document.getElementById("divide").addEventListener("click", calculate);
+        function calculate() {
+            a = Number(document.getElementById("value1").value);
+            b = Number(document.getElementById("value2").value);
+            if (!(a<=0) && !(a>=0) || !(b<=0) && !(b>=0)) {
+                alert("Please insert a numerical value");
+            }
+            if (document.getElementById("add").checked) {
+                answer = a + b;
+                document.getElementById("answer").innerHTML = answer;
+            } else if (document.getElementById("subtract").checked) {
+                answer = a - b;
+                document.getElementById("answer").innerHTML = answer;
+            } else if (document.getElementById("multiply").checked) {
+                answer = a * b;
+                document.getElementById("answer").innerHTML = answer;
+            } else if (document.getElementById("divide").checked) {
+                answer = a / b;
+                document.getElementById("answer").innerHTML = answer;
+            }
+        }
+    </script>
+    <div>
+        Answer: <a id="answer"> </a>
+    </div>
+</body>
+</html>

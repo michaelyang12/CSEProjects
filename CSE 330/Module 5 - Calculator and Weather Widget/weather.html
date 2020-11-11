@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang = "en">
+<link rel ="stylesheet" type="text/css" href = "weatherstyle.css">
+<h1>
+    <title>Weather Widget</title>
+</h1>
+<body>
+    <div class="weather" id="weatherWidget">
+        <button type="button" onclick=fetchWeather()>Fetch Weather</button>
+        <div class="weather-loc">
+            <strong id="city"> </strong>
+            <a id="state"></a>
+        </div>
+        <div class="weather-humidity" id="weather-humidity">
+        </div>
+        <div class="weather-temp" id="weather-temp">
+        </div>
+        <img class="weather-tomorrow" id="weather-tomorrow"/>
+        <img class="weather-dayaftertomorrow" id="weather-dayaftertomorrow"/>
+    </div>
+</body>
+
+<script type="text/JavaScript">
+  function fetchWeather() {
+    let url = "https://classes.engineering.wustl.edu/cse330/content/weather_json.php";
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        var weather = JSON.parse(this.responseText);
+        document.getElementById("city").innerHTML = weather.location.city;
+        document.getElementById("state").innerHTML = weather.location.state;
+        document.getElementById("weather-humidity").innerHTML = weather.atmosphere.humidity;
+        document.getElementById("weather-temp").innerHTML = weather.current.temp;
+        var tomorrowCode = weather.tomorrow.code;
+        var dayAfterCode = weather.dayafter.code;
+        document.getElementById("weather-tomorrow").src = 'http://us.yimg.com/i/us/nws/weather/gr/' + tomorrowCode + 'ds.png';
+        document.getElementById("weather-dayaftertomorrow").src = 'http://us.yimg.com/i/us/nws/weather/gr/' + dayAfterCode + 'ds.png';
+      }
+    };
+    xmlhttp.open("GET", url, true);
+    xmlhttp.send();
+  }
+  document.addEventListener("DOMContentLoaded", fetchWeather, false);
+</script>
+</html>

@@ -1,0 +1,19 @@
+.jumbotron {
+    background-image: url('/news/res/home-background.jpg');
+}
+
+body {
+    background-color: #EAE7DC;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.news-header {
+    margin: 20px 20px 20px 20px;
+}
+
+#register-div {
+    margin: 0 auto;
+}

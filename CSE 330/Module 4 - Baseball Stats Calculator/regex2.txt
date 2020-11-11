@@ -1,0 +1,1 @@
+/\b[A-Z,a-z]*[AEIOUaeiou]{3}[A-Z,a-z]*\b/g

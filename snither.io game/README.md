@@ -1,7 +1,7 @@
 # snither.io
 
 ## Creators
-Michael Yang,
+Michael Yang
 
 William Silberstein
 

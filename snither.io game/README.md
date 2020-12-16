@@ -1,4 +1,4 @@
-# CSE330
+# snither.io
 
 ## Creators
 Michael Yang

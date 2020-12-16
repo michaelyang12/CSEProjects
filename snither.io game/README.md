@@ -1,26 +1,14 @@
 # CSE330
 
 ## Creators
-473590
-474204
+Michael Yang
+William Silberstein
 
-# Creative Portion
+# Description of game
+The game is called snither.io, and is essentially our attempt at remaking the popular online game slither.io. Much like the original game, this game involves controlling a snake that follows the mouse cursor and grows when it eats food and dies when it collides with another snake. The player can speed up the snake by holding down space or mouse click, causing the snake to shrink in size in the process. 
 
-## Snake Bots
-For the creative portion we decided to add snake bots into the game for the user to play against.
+# More features
+As of now the game is only singleplayer with AI snakes. A live scoreboard is available for each game, showing the top 5 scores. An all-time leaderboard is also present displaying the 10 highest scores achieved by players. When a player dies, their score is sent to the server and if it is high enough it will be displayed on this leaderboard. 
 
-### Snake Movement AI
- - Snakes move loosely towards player position so that the player will experience more action
- - Snakes will be drawn to food that snakes drop if they are near
- - Snake will move in random directions if they are near the player and there is no food around
-
-## Audio 
- - Background music while game is playing
- - Various sound effects added
-    * Death sound
-    * Button clicked sound
-    * Game start sound
-
-## Ability to restart
- - Player can restart game an infinite amount of times
- - Players can logout and switch accounts or enter a new username
+# User accounts
+Players have the option to play quickly using a username of their choice, as long as that username does not belong to an already registered account. If the player wishes they can create a permanent username by registering for an account. Then, once registered they can sign in and begin playing. Player who are registered are able to change the color of their snake. 

@@ -1,5 +1,5 @@
-# CSE330
-473590 474204
+Michael Yang
+William Silberstein
 
 [Link to Calendar](http://ec2-3-129-148-71.us-east-2.compute.amazonaws.com/calendar/)
 

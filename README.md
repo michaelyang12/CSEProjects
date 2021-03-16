@@ -1,3 +1,4 @@
-# Computer Science Repo for Michael Yang
+# Computer Science Projects
+## Michael Yang
 
 Folders listed by language.

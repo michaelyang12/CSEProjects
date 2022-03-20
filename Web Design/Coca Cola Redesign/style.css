@@ -1,0 +1,229 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+#logo {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+}
+
+#section-logo {
+    margin-top: 5em;
+    width: 100%;
+    text-align: center;
+}
+
+#section-logo img{
+    margin: auto;
+    width: 25em;
+    overflow: hidden;
+}
+
+.links {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 4em;
+}
+
+.links a {
+    padding: 2em;
+    color: black;
+}
+
+.links a:hover {
+    color: rgb(104, 2, 2);
+}
+
+#logo img {
+    border-radius: 50%;
+    width: 10em;
+    margin-top: 6em;
+}
+
+#header-bar {
+    z-index: 10;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    background: black;
+}
+
+#header-bar a {
+    color: white;
+    text-decoration: none;
+}
+
+#header-bar a:hover {
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+}
+
+#header-bar #container {
+    display: flex;
+    margin: auto;
+    width: 75%;
+}
+
+#header-bar .tab {
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 25px;
+}
+
+#header-bar .search-bar {
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 24px;
+    padding-bottom: 26px;
+    margin-left: 0.5em;
+}
+
+#header-bar .icon {
+    color: white;
+    padding-top: 27px;
+    padding-bottom: 23px;
+    padding-left: 25px;
+}
+
+.search-bar input {
+    background-color: rgb(37, 37, 37);
+    border: none;
+    color: white;
+    height: 1.5em;
+}
+
+.search-bar input[type=text]:hover {
+    background-color: rgb(44, 44, 44)
+}
+
+.search-bar input[type=text]:focus {
+    background-color: rgb(49, 49, 49)
+}
+
+.search-bar input[type=text]:focus {
+    outline: none;
+}
+
+#header-bar .logo img {
+    width: 7em;
+    margin: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.section-dark {
+    text-align: center;
+    margin: auto;
+    margin-top: -2em;
+    font-family: 'Fredoka', sans-serif;
+    padding: 1em;
+    color: rgb(255, 255, 255);
+    background: rgb(255, 0, 0);
+    margin-bottom: 2em;
+}
+
+.section-dark a {
+    position: relative;
+    margin: auto;
+    margin-top: 15em;
+    color: white;
+}
+
+.section-dark a:hover {
+    color: rgb(253, 204, 204);
+}
+
+.section-dark img {
+    width: 50em;
+    margin: auto;
+}
+
+.content-section {
+    margin: auto;
+    width: screen;
+    margin-top: 2em;
+    background-color: red;
+}
+
+/* #backdrop {
+    position: fixed;
+    width: 100%;
+    z-index: -5;
+    right: 0em;
+    top: 0em;
+    filter: blur(8px);
+} */
+
+.section-banner {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.section-banner img {
+    width: 100%;
+}
+
+.section-banner h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 4em;
+    font-weight: 600;
+    position: absolute;
+    color: white;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.section-brands {
+    text-align: center;
+    width: 75%;
+    height: 170em;
+    color: white;
+    margin: auto;
+    margin-top: 5em;
+}
+
+.section-brands .brand {
+    float: left;
+    width: 33%;
+    font-family: 'League Gothic', sans-serif;
+    font-size: 50px;
+    margin-bottom: 4em;
+}
+
+.brand a {
+    text-decoration: none;
+    color: white;
+}
+
+.brand a:hover {
+    color: rgb(255, 197, 197);
+    text-decoration: none;
+}
+
+.section-text {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 2em;
+}
+
+.section-text p {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.section-text h1 {
+    font-size: x-large;
+}

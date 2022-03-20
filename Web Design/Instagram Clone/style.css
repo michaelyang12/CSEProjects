@@ -1,0 +1,473 @@
+body {
+    background-color: #fafafa;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+#divider {
+    height: 2em;
+    margin: 1em;
+    width: 1px;
+    border-left: 0.5px solid #aaa9a9;
+}
+
+#ig-header {
+    font-family: 'Cookie', cursive;
+}
+
+#header-bar {
+    z-index: 10;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    border: 1px solid #cecccc;
+    background: white;
+}
+
+.header-style, #header-bar i {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+#main {
+    width: 70%;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+#logo-left {
+    display: flex;
+    align-items: center;
+}
+
+#header-bar-search {
+    display: flex;
+    align-items: center;
+}
+
+#header-bar-search i{
+    position: absolute;
+    z-index: 15;
+    margin-left: 65px;
+    color: #b3b1ae;
+}
+
+#searchbar {
+    background-color: #fafafa;
+    border-radius: 3px;
+    border: 1.5px solid #e4e4e4;
+    /* padding-left: 25px; */
+    padding-top: 3px;
+    padding-bottom: 3px;
+    width: 200px;
+    height: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    /* font-family: FontAwesome; */
+}
+
+.header-bar ::placeholder {
+    color: #b3b1ae;
+}
+
+#header-bar-search input[type=text]:focus {
+    background-color: #dddcdc;
+}
+
+#header-bar-search input[type=text]:focus {
+    border: 0px solid #ffffff;
+}
+
+#header-bar-icons {
+    display: flex;
+    align-items: center;
+    stroke-width: 1px;
+}
+
+#explore, #likes, #profile {
+    padding-left: 12px;
+    padding-right: 12px;
+    color: #6d6d6d;
+}
+
+#posts-container {
+    width: 45%;
+    padding-top: 90px;
+    padding-left: 15%;
+    float: left;
+}
+
+.post {
+    border-radius: 4px;
+    /* margin-top: 150px; */
+    border: 1px solid #e9e9e9;
+    background: white;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.post-header img {
+    border-radius: 50%;
+    width: 2em;
+    margin: 2%;
+}
+
+.post-header p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #3b3b3b;
+}
+
+.post-image img{
+    width: 100%;
+}
+
+.post-action-bar {
+}
+
+#action-likes, #action-comments, #action-share{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 15px;
+    margin-bottom: 3px;
+    margin-left: 5px;
+}
+
+#action-save {
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.post-likes {
+    padding-top: 15px;
+    padding-bottom: 5px;
+    margin-left: 12px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #3b3b3b;
+}
+
+.post-caption, .post-comments {
+    padding-top: 5px;
+    justify-content: center;
+}
+
+.user {
+    margin-left: 12px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #3b3b3b;
+}
+
+.comment {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #3b3b3b;
+}
+
+.post-time {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-left: 12px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #9a9da0;
+}
+
+.post-add-comments {
+    border-top: 1px solid #efefef;
+    margin: auto;
+    width: 96%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.post-add-comments span {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #9e9d9c;
+}
+
+.post-add-comments #ellipsis {
+    float: right;
+}
+
+#suggestions-container {
+    margin-top: 55px;
+    border: 1px solid #e6e6e6;
+    width: 100%;
+    background-color: white;
+    border-radius: 4px;
+    height: 275px;
+    margin-bottom: 55px;
+}
+
+.suggestions-header {
+    padding-top: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 15px;
+}
+
+.suggestions-header #for-you {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #9e9d9c;
+}
+
+.suggestions-header #see-all {
+    float: right;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #499df0;
+}
+
+.suggestion {
+    margin-left: 25px;
+    margin-bottom: 35px;
+    float: left;
+    width: 27%;
+    border-radius: 3px;
+    border: 1px solid #e6e6e6;
+    background-color: white;
+    justify-content: center;
+    text-align: center;
+}
+
+.suggestion .profile-picture img {
+    position: relative;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 50%;
+    width: 3.5em;
+}
+
+.suggestion .profile-picture i {
+    position: absolute;
+    float: right;
+    margin-left: 20px;
+    margin-top: 20px;
+    color: #9e9e9e;
+}
+
+.suggestion .name {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #262626;
+}
+
+.suggestion .description {
+    padding-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 400px;
+    color: #a49ea9;
+}
+
+.suggestion .follow-button {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400px;
+    color: #ffffff;
+    background-color: #3797f0;
+    width: 65%;
+    margin: auto;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+.suggestion .profile-picture i {
+    position: absolute;
+    float: right;
+    margin-left: 20px;
+    margin-top: 20px;
+    color: #9e9e9e;
+}
+
+#profile-stories-container {
+    width: 25%;
+    float: left;
+    margin-top: 4.5em;
+    margin-left: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+#my-profile {
+    display: flex;
+    align-items: center;
+}
+
+#profile-picture {
+    padding: 0em;
+    margin: 0em;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#profile-picture img {
+    border-radius: 50%;
+    width: 3em;
+}
+
+#my-profile .description, .description {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 1em;
+}
+
+#my-profile img {
+    margin-top: 25px;
+    margin-left: 15px;
+    border-radius: 50%;
+    width: 3em;
+}
+
+#my-profile .description .username {
+    margin-top: 15px;
+    margin-bottom: 2px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #3b3b3b;
+}
+
+
+#my-profile .description .name {
+    margin-left: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 400px;
+    color: #999999;
+} 
+
+#profile-stories-container #separator {
+    margin-top: 10px;
+    border-top: 1px solid #efefef;
+    margin-inline: auto;
+    width: 95%;
+}
+
+#stories-header {
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+}
+
+#stories-header #stories {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #999b9d
+}
+
+#stories-header #watch-all {
+    float: right;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color:#363636;
+}
+
+.story {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-top: 0.5em;
+}
+
+.story img {
+    margin-left: 15px;
+    border-radius: 50%;
+    width: 3em;
+    border: 2px solid #dd006f;
+    padding: 2px;
+}
+
+.story .description .username {
+    margin-bottom: 3px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #3b3b3b;
+}
+
+.story .description .timestamp {
+    margin-left: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 400px;
+    color: #999999;
+}
+
+#stories-container {
+    height: 300px;
+    overflow: auto;
+}
+
+#separator-2 {
+    border-top: 1px solid #efefef;
+    margin-inline: auto;
+    width: 95%;
+    margin-bottom: 15px;
+}
+
+#terms {
+    margin-left: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400px;
+    color: #c7c8c8;
+    width: 75%;
+}
+
+#copyright {
+    margin-top: 15px;
+    margin-left: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400px;
+    color: #c7c8c8;
+}
+
+#header-bar-search i input[type=text]:focus {
+    color: black;
+}
+
+@media (max-width: 60em) {
+    #profile-stories-container { 
+        display: none; 
+    }
+    #posts-container {
+        margin: auto;
+        width: 70%;
+    }
+}
